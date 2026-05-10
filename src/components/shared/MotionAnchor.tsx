@@ -1,7 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
-
 export default function MotionAnchor({
   children,
   href,
@@ -10,12 +6,11 @@ export default function MotionAnchor({
   href: string;
 }) {
   return (
-    <motion.a
+    <a
       href={href}
-      whileHover={{ scale: 1.05 }}
-      className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-white text-black font-medium mb-8"
+      className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-white text-black font-medium mb-8 transition transform hover:scale-105"
     >
       {children}
-    </motion.a>
+    </a>
   );
 }

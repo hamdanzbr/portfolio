@@ -1,25 +1,18 @@
-"use client";
-
-import { motion } from "framer-motion";
-
 export default function MotionDiv({
   children,
   delay = 0,
-  className
+  className,
 }: {
   children: React.ReactNode;
   delay?: number;
-  className?:string
+  className?: string;
 }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, x: -30 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ delay }}
-      viewport={{ once: true }}
-      className={className}
+    <div
+      className={`opacity-0 animate-fade-in ${className || ""}`}
+      style={{ animationDelay: `${delay}s` }}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }

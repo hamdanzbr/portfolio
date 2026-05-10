@@ -11,7 +11,7 @@ export default function Experience() {
             Experience
           </h2>
 
-          <div className="relative border-l border-white/10">
+          <div className="relative border-l border-white/10 pl-4">
             {experience.map((item, index) => (
               <div
                 key={index}
@@ -19,7 +19,7 @@ export default function Experience() {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Dot */}
-                <span className="absolute -left-2.5 w-4 h-4 bg-purple-500 rounded-full shadow-[0_0_20px_rgba(168,85,247,0.25)]"></span>
+                <span className="absolute -left-[9px] top-1 w-4 h-4 bg-purple-500 rounded-full shadow-[0_0_20px_rgba(168,85,247,0.25)]"></span>
 
                 <h3 className="text-lg font-medium">
                   {item.role}

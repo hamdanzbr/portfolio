@@ -1,5 +1,3 @@
-// "use client";
-
 import SectionWrapper from "@/components/shared/SectionWrapper";
 
 export default function About() {
