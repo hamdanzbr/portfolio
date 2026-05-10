@@ -1,7 +1,4 @@
-// "use client";
-
 import SectionWrapper from "@/components/shared/SectionWrapper";
-import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import MotionAnchor from "@/components/shared/MotionAnchor";
@@ -23,7 +20,7 @@ export default function Contact() {
 
           {/* Email Button */}
           <MotionAnchor
-            href="mailto:your-email@example.com"
+            href="mailto:hamdanzbr46@gmail.com"
           >
             <CiMail size={18} />
 
@@ -33,7 +30,7 @@ export default function Contact() {
           {/* Social Links */}
           <div className="flex justify-center gap-6 text-gray-400">
             <a
-              href="https://github.com/your-username"
+              href="https://github.com/hamdanzbr"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition"
@@ -42,7 +39,7 @@ export default function Contact() {
             </a>
 
             <a
-              href="https://linkedin.com/in/your-profile"
+              href="https://www.linkedin.com/in/hamdan-zubair-bb18b1292"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition"

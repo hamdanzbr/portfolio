@@ -5,9 +5,11 @@ import { motion } from "framer-motion";
 export default function MotionDiv({
   children,
   delay = 0,
+  className
 }: {
   children: React.ReactNode;
   delay?: number;
+  className?:string
 }) {
   return (
     <motion.div
@@ -15,6 +17,7 @@ export default function MotionDiv({
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ delay }}
       viewport={{ once: true }}
+      className={className}
     >
       {children}
     </motion.div>

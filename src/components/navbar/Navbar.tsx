@@ -32,7 +32,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="fixed top-0 w-full z-50  bg-black/60 border-b border-white/10">
+    <header className="fixed top-0 w-full z-50 backdrop-blur bg-black/60 border-b border-white/10">
       <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
         
         <h1 className="font-semibold text-lg">dev.io</h1>
