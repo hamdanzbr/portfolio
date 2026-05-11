@@ -7,7 +7,6 @@ export default function Hero() {
   return (
     <section className="py-24 md:py-32 relative">
       <div className="max-w-6xl mx-auto px-4">
-        
         {/* Glow background */}
         <div className="absolute inset-0 -z-10 blur-2xl opacity-20 bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500" />
 
@@ -35,24 +34,32 @@ export default function Hero() {
           transition={{ duration: 0.7 }}
           className="text-gray-300 max-w-xl mb-8"
         >
-          I build scalable and performant web applications using React, Next.js, and modern technologies.
+          I build scalable and performant web applications using React, Next.js,
+          and modern technologies.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex gap-4"
+          className="flex gap-4 flex-wrap"
         >
-          <button className="px-6 py-3 rounded-lg bg-white text-black font-medium hover:scale-105 transition">
+          <a
+            href="/Hamdan cv25.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 rounded-lg bg-white text-black font-medium hover:scale-105 transition inline-block"
+          >
             View Resume
-          </button>
+          </a>
 
-          <button className="px-6 py-3 rounded-lg border border-gray-700 hover:border-purple-400 hover:shadow-[0_0_20px_rgba(168,85,247,0.25)] transition">
+          <a
+            href="#contact"
+            className="px-6 py-3 rounded-lg border border-gray-700 hover:border-purple-400 hover:shadow-[0_0_20px_rgba(168,85,247,0.25)] transition inline-block"
+          >
             Get in touch
-          </button>
+          </a>
         </motion.div>
-
       </div>
     </section>
   );

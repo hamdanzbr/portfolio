@@ -41,12 +41,12 @@ export default function Projects() {
               <div className="flex gap-4">
                 {featured.github && (
                   <a href={featured.github} target="_blank">
-                    <FaGithub size={16} /> Code
+                    <FaGithub size={16} /> 
                   </a>
                 )}
                 {featured.live && (
                   <a href={featured.live} target="_blank">
-                    <GoLinkExternal size={16} /> Live
+                    <GoLinkExternal size={16} /> 
                   </a>
                 )}
               </div>
@@ -83,12 +83,12 @@ export default function Projects() {
                 <div className="flex gap-4">
                   {project.github && (
                     <a href={project.github} target="_blank">
-                      <FaGithub size={14} /> Code
+                      <FaGithub size={14} /> 
                     </a>
                   )}
                   {project.live && (
                     <a href={project.live} target="_blank">
-                      <GoLinkExternal size={14} /> Live
+                      <GoLinkExternal size={14} /> 
                     </a>
                   )}
                 </div>

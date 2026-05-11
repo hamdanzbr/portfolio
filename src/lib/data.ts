@@ -31,8 +31,8 @@ export const projects = [
     title: "Freelance Platform (Startup)",
     description:
       "Worked as a frontend developer building scalable UI components and real-time chat features. Collaborated with backend APIs and improved performance.",
-    tech: ["React", "Next.js", "Tailwind"],
-    live: "https://your-startup-link.com",
+    tech: ["React", "Next.js", "Tailwind","Websocket"],
+    live: "https://app.huzl.in",
     github: "",
     featured: true,
   },
@@ -42,14 +42,14 @@ export const projects = [
       "Developed a real-time chat application with efficient state management and optimized rendering. Demo currently unavailable.",
     tech: ["React", "Node.js", "Socket.io"],
     live: "",
-    github: "https://github.com/your-repo",
+    github: "https://github.com/hamdanzbr/Mern-Chat-App.git",
   },
   {
     title: "YouTube Clone",
     description:
       "Built a responsive YouTube UI clone with modern frontend practices and reusable components.",
     tech: ["React", "Tailwind"],
-    live: "https://your-youtube-clone.com",
-    github: "https://github.com/your-repo",
+    live: "https://hamdanzbr.github.io/youtube_clone",
+    github: "https://github.com/hamdanzbr/youtube_clone.git",
   },
 ];
