@@ -35,7 +35,7 @@ export default function Navbar() {
     <header className="fixed top-0 w-full z-50  bg-black/80 border-b border-white/10">
       <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
         
-        <h1 className="font-semibold text-lg">dev.io</h1>
+        <h1 className="font-semibold text-lg">Hamdan Zubair</h1>
 
         <div className="hidden md:flex gap-6">
           {navItems.map((item) => (
@@ -45,7 +45,7 @@ export default function Navbar() {
               className={`text-sm transition ${
                 active === item.id
                   ? "text-white"
-                  : "text-gray-400 hover:text-white"
+                  : "text-gray-400 hover:text-white relative after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-purple-400 after:transition-all hover:after:w-full"
               }`}
             >
               {item.name}

@@ -19,6 +19,15 @@ export default function Hero() {
           Available for new opportunities
         </motion.p>
 
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          className="text-2xl text-[#CCCCCC] font-bold mb-4"
+        >
+          Hi, I’m Hamdan 👋
+        </motion.p>
+
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -48,14 +57,14 @@ export default function Hero() {
             href="/Hamdan cv25.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 rounded-lg bg-white text-black font-medium hover:scale-105 transition inline-block"
+            className="px-6 py-3 rounded-lg bg-white text-black font-medium hover:scale-105 hover:shadow-lg hover:shadow-white/10 transition inline-block"
           >
             View Resume
           </a>
 
           <a
             href="#contact"
-            className="px-6 py-3 rounded-lg border border-gray-700 hover:border-purple-400 hover:shadow-[0_0_20px_rgba(168,85,247,0.25)] transition inline-block"
+            className="px-6 py-3 rounded-lg border border-gray-700 hover:border-purple-400 hover:shadow-[0_0_20px_rgba(168,85,247,0.25)] transition inline-block hover:bg-purple-500/10"
           >
             Get in touch
           </a>

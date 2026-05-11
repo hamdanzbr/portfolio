@@ -37,7 +37,7 @@ export default function Skills() {
                   return (
                     <div
                       key={skill.name}
-                      className="p-6 rounded-xl border border-white/10 bg-white/5 hover:border-purple-400 hover:shadow-[0_0_20px_rgba(168,85,247,0.25)] transition opacity-0 animate-fade-in"
+                      className="p-6 rounded-xl border border-white/10 bg-white/5 hover:border-purple-400 hover:-translate-y-1 transition-all duration-300 ease-out"
                       style={{ animationDelay: `${index * 0.1}s` }}
                     >
                       {Icon && (
