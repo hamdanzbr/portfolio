@@ -27,27 +27,47 @@ export const experience = [
 ];
 
 export const projects = [
+
+    {
+    title: "Aurix E-Commerce",
+    description:
+      "Built a full-stack e-commerce platform using Next.js, TypeScript, Node.js, Express, and MongoDB. Implemented authentication, product filtering, wishlist, cart management, order tracking, and responsive UI with modern state management.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "MongoDB",
+      "Zustand",
+      "React Query",
+      "Tailwind",
+    ],
+    live: "https://aurix-fitness-ring-commerce.vercel.app", // Add deployed URL if available
+    github: "https://github.com/YOUR_USERNAME/aurix-frontend",
+    featured:true
+  },
+
   {
     title: "Freelance Platform (Startup)",
     description:
-      "Worked as a frontend developer building scalable UI components and real-time chat features. Collaborated with backend APIs and improved performance.",
-    tech: ["React", "Next.js", "Tailwind","Websocket"],
+      "Worked as a frontend developer building scalable UI components and real-time chat features. Collaborated with backend APIs, optimized performance, and developed production-ready features used by real users.",
+    tech: ["React", "Next.js", "Tailwind", "WebSocket"],
     live: "https://app.huzl.in",
     github: "",
-    featured: true,
   },
+
   {
     title: "Real-time Chat App",
     description:
-      "Developed a real-time chat application with efficient state management and optimized rendering. Demo currently unavailable.",
-    tech: ["React", "Node.js", "Socket.io"],
+      "Built a real-time chat application using Socket.io with instant messaging, user authentication, efficient state management, and optimized rendering performance.",
+    tech: ["React", "Node.js", "Socket.io", "MongoDB"],
     live: "",
     github: "https://github.com/hamdanzbr/Mern-Chat-App.git",
   },
+
   {
     title: "YouTube Clone",
     description:
-      "Built a responsive YouTube UI clone with modern frontend practices and reusable components.",
+      "Developed a responsive YouTube-inspired application with reusable React components, dynamic content rendering, and mobile-first design principles.",
     tech: ["React", "Tailwind"],
     live: "https://hamdanzbr.github.io/youtube_clone",
     github: "https://github.com/hamdanzbr/youtube_clone.git",
