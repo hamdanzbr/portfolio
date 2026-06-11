@@ -54,7 +54,7 @@ export default function Hero() {
           className="flex gap-4 flex-wrap"
         >
           <a
-            href="/Hamdan cv25.pdf"
+            href="/cv26-06.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-lg bg-white text-black font-medium hover:scale-105 hover:shadow-lg hover:shadow-white/10 transition inline-block"
