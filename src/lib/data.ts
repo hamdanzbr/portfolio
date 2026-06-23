@@ -26,7 +26,17 @@ export const experience = [
   },
 ];
 
-export const projects = [
+export interface Project {
+  title: string;
+  description: string;
+  tech: string[];
+  live?: string;
+  frontendRepo?: string;
+  backendRepo?: string;
+  featured?: boolean;
+}
+
+export const projects:Project[] = [
   {
     title: "Restaurant QR Ordering System",
     description:
@@ -45,8 +55,9 @@ export const projects = [
       "Tailwind CSS",
       "ShadCN UI",
     ],
-    live: "YOUR_VERCEL_URL",
-    github: "YOUR_GITHUB_URL",
+    live: "https://restaurant-qr-nu.vercel.app/admin/orders",
+    frontendRepo: "https://github.com/hamdanzbr/restaurant-qr",
+    backendRepo:"https://github.com/hamdanzbr/restaurant-qr-backend",
     featured: true,
   },
 
@@ -64,7 +75,8 @@ export const projects = [
       "Tailwind",
     ],
     live: "https://aurix-fitness-ring-commerce.vercel.app",
-    github: "https://github.com/YOUR_USERNAME/aurix-frontend",
+    frontendRepo: "https://github.com/hamdanzbr/aurix-fitness-ring-commerce",
+    backendRepo:"https://github.com/hamdanzbr/aurix-backend"
   },
 
   {
@@ -73,7 +85,7 @@ export const projects = [
       "Worked as a frontend developer building scalable UI components and real-time chat features. Collaborated with backend APIs, optimized performance, and developed production-ready features used by real users.",
     tech: ["React", "Next.js", "Tailwind", "WebSocket"],
     live: "https://app.huzl.in",
-    github: "",
+    frontendRepo: "",
   },
 
   {
@@ -82,6 +94,6 @@ export const projects = [
       "Built a real-time chat application using Socket.io with instant messaging, user authentication, efficient state management, and optimized rendering performance.",
     tech: ["React", "Node.js", "Socket.io", "MongoDB"],
     live: "",
-    github: "https://github.com/hamdanzbr/Mern-Chat-App.git",
+    frontendRepo: "https://github.com/hamdanzbr/Mern-Chat-App",
   },
 ];

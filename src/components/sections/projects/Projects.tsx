@@ -10,22 +10,15 @@ export default function Projects() {
   return (
     <section id="projects" className="py-20 md:py-28">
       <div className="max-w-6xl mx-auto px-4">
-
         <SectionWrapper>
-          <h2 className="text-2xl md:text-3xl font-semibold mb-12">
-            Projects
-          </h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-12">Projects</h2>
 
           {/* Featured Project */}
           {featured && (
             <div className="mb-12 opacity-0 animate-fade-in">
-              <h3 className="text-xl font-semibold mb-2">
-                {featured.title}
-              </h3>
+              <h3 className="text-xl font-semibold mb-2">{featured.title}</h3>
 
-              <p className="text-gray-300 mb-4">
-                {featured.description}
-              </p>
+              <p className="text-gray-300 mb-4">{featured.description}</p>
 
               <div className="flex flex-wrap gap-2 mb-6">
                 {featured.tech.map((t) => (
@@ -38,15 +31,37 @@ export default function Projects() {
                 ))}
               </div>
 
-              <div className="flex gap-4">
-                {featured.github && (
-                  <a href={featured.github} target="_blank">
-                    <FaGithub size={16} /> 
+              <div className="flex gap-4 items-center">
+                {featured?.frontendRepo && (
+                  <a
+                    href={featured.frontendRepo}
+                    target="_blank"
+                    className="flex items-center gap-1 text-sm"
+                  >
+                    <FaGithub />
+                    <span>Frontend</span>
                   </a>
                 )}
+
+                {featured.backendRepo && (
+                  <a
+                    href={featured.backendRepo}
+                    target="_blank"
+                    className="flex items-center gap-1 text-sm"
+                  >
+                    <FaGithub />
+                    <span>Backend</span>
+                  </a>
+                )}
+
                 {featured.live && (
-                  <a href={featured.live} target="_blank">
-                    <GoLinkExternal size={16} /> 
+                  <a
+                    href={featured.live}
+                    target="_blank"
+                    className="flex items-center gap-1 text-sm"
+                  >
+                    <GoLinkExternal />
+                    <span>Live Demo</span>
                   </a>
                 )}
               </div>
@@ -61,9 +76,7 @@ export default function Projects() {
                 className="opacity-0 animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <h3 className="font-semibold text-lg mb-2">
-                  {project.title}
-                </h3>
+                <h3 className="font-semibold text-lg mb-2">{project.title}</h3>
 
                 <p className="text-gray-300 text-sm mb-4">
                   {project.description}
@@ -81,23 +94,21 @@ export default function Projects() {
                 </div>
 
                 <div className="flex gap-4">
-                  {project.github && (
-                    <a href={project.github} target="_blank">
-                      <FaGithub size={14} /> 
+                  {project.frontendRepo && (
+                    <a href={project.frontendRepo} target="_blank">
+                      <FaGithub size={14} />
                     </a>
                   )}
                   {project.live && (
                     <a href={project.live} target="_blank">
-                      <GoLinkExternal size={14} /> 
+                      <GoLinkExternal size={14} />
                     </a>
                   )}
                 </div>
               </div>
             ))}
           </div>
-
         </SectionWrapper>
-
       </div>
     </section>
   );
