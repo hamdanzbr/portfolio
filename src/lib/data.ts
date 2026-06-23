@@ -27,8 +27,30 @@ export const experience = [
 ];
 
 export const projects = [
+  {
+    title: "Restaurant QR Ordering System",
+    description:
+      "Built a full-stack restaurant ordering platform where customers scan table QR codes to browse menus, place orders, and track status in real time. Developed an admin dashboard for managing dishes, categories, tables, analytics, and live orders with drag-and-drop workflow updates. Implemented Socket.IO for real-time synchronization, Cloudinary image uploads, QR code generation, JWT authentication, and PostgreSQL with Prisma ORM.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Prisma",
+      "Socket.IO",
+      "Zustand",
+      "React Query",
+      "Cloudinary",
+      "Tailwind CSS",
+      "ShadCN UI",
+    ],
+    live: "YOUR_VERCEL_URL",
+    github: "YOUR_GITHUB_URL",
+    featured: true,
+  },
 
-    {
+  {
     title: "Aurix E-Commerce",
     description:
       "Built a full-stack e-commerce platform using Next.js, TypeScript, Node.js, Express, and MongoDB. Implemented authentication, product filtering, wishlist, cart management, order tracking, and responsive UI with modern state management.",
@@ -41,9 +63,8 @@ export const projects = [
       "React Query",
       "Tailwind",
     ],
-    live: "https://aurix-fitness-ring-commerce.vercel.app", // Add deployed URL if available
+    live: "https://aurix-fitness-ring-commerce.vercel.app",
     github: "https://github.com/YOUR_USERNAME/aurix-frontend",
-    featured:true
   },
 
   {
@@ -62,14 +83,5 @@ export const projects = [
     tech: ["React", "Node.js", "Socket.io", "MongoDB"],
     live: "",
     github: "https://github.com/hamdanzbr/Mern-Chat-App.git",
-  },
-
-  {
-    title: "YouTube Clone",
-    description:
-      "Developed a responsive YouTube-inspired application with reusable React components, dynamic content rendering, and mobile-first design principles.",
-    tech: ["React", "Tailwind"],
-    live: "https://hamdanzbr.github.io/youtube_clone",
-    github: "https://github.com/hamdanzbr/youtube_clone.git",
   },
 ];
