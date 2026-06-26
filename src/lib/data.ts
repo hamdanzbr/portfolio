@@ -7,6 +7,7 @@ export const skills = [
   { name: "Node.js", level: "Intermediate" },
   { name: "MongoDB", level: "Intermediate" },
   { name: "Git", level: "Advanced" },
+  { name: "PostgreSql", level: "Intermediate" },
 ];
 
 export const experience = [
@@ -55,7 +56,7 @@ export const projects:Project[] = [
       "Tailwind CSS",
       "ShadCN UI",
     ],
-    live: "https://restaurant-qr-nu.vercel.app/admin/orders",
+    live: "https://restaurant-qr-nu.vercel.app",
     frontendRepo: "https://github.com/hamdanzbr/restaurant-qr",
     backendRepo:"https://github.com/hamdanzbr/restaurant-qr-backend",
     featured: true,

@@ -3,6 +3,7 @@
 import SectionWrapper from "@/components/shared/SectionWrapper";
 import { skills } from "@/lib/data";
 import { motion } from "framer-motion";
+import { DiPostgresql } from "react-icons/di";
 import { FaReact, FaNodeJs, FaJs, FaGitAlt } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -20,6 +21,7 @@ const iconMap: Record<string, any> = {
   "Node.js": FaNodeJs,
   MongoDB: SiMongodb,
   Git: FaGitAlt,
+  PostgreSql:DiPostgresql
 };
 export default function Skills() {
   return (
